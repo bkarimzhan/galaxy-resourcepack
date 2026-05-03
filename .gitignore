@@ -1,0 +1,33 @@
+# --- Secrets — must NEVER be committed ---
+.env
+.env.*
+*.secret
+*.token
+*.key
+*.pem
+*.p12
+*.pfx
+.netrc
+auth.json
+credentials.json
+secrets.*
+**/secrets/
+*_token*
+*_pat*
+gh_token*
+github_token*
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Build artifacts (we keep pack.zip itself, but not temp build dirs) ---
+build/
+dist/
+*.zip.bak
